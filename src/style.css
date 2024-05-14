@@ -23,7 +23,7 @@ html, body {
 }
 
 .blur{
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 }
 
 .center{
@@ -44,8 +44,8 @@ article{
 
 #introCard{
   padding: 1em;
-  background-color: #24242464;
-  backdrop-filter: blur(8px);
+  background-color: #24242455;
+  backdrop-filter: blur(6px);
 }
 
 #Name{
@@ -98,7 +98,7 @@ article{
   position: relative;
   left: 50%;
   margin-left: -30px;
-  bottom: -40vh;
+  bottom: -20vh;
 }
 
 .arrows path {
