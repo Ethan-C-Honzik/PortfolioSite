@@ -38,8 +38,13 @@ html, body {
   transform: translate(-30%, -30%);
 }
 
-.blurBackground { 
-  background-color: rgba(24, 28, 37, 0.691);
+article{
+  background-color: #24242464;
+}
+
+#introCard{
+  padding: 1em;
+  background-color: #24242464;
   backdrop-filter: blur(8px);
 }
 
@@ -52,6 +57,7 @@ html, body {
 .ScrollContainer {
   align-items: center;
   overflow: hidden;
+  margin-left: 1%;
 }
 
 .scroll {
@@ -83,6 +89,54 @@ html, body {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-50.5%);
+    transform: translateX(-50.4%);
   }
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: relative;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -40vh;
+}
+
+.arrows path {
+	stroke: hsl(15, 90%, 60%);
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }

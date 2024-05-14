@@ -8,7 +8,7 @@ VANTA.NET({
   minWidth: 200.00,
   scale: 1,
   scaleMobile: 1.00,
-  color: 'hsl(0, 100%, 74%)',
+  color: '#3DC7F5',
   backgroundColor: 'hsl(220, 24%, 5%)'
 })
 let canvas = <HTMLElement>document.querySelector('.vanta-canvas');
