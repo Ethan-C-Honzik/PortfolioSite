@@ -72,11 +72,10 @@ article{
 
 .scroll p {
   font-size: 1em;
-  
   color: white;
   font-weight: bold;
   margin-bottom: 0;
-  line-height: 1em;
+  line-height: 1.35em;
 }
 
 .RightToLeft {
