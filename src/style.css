@@ -16,6 +16,9 @@
 html, body {
   margin: 0;
   height: 100%;
+  max-width: 100vw; 
+  overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 .nav{
@@ -41,6 +44,18 @@ html, body {
 article{
   background-color: #24242464;
 }
+
+.background-div {
+  position: absolute;
+  background-color: hsl(220, 24%, 5%);
+  height: 100%;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 
 #introCard{
   padding: 1em;

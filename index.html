@@ -1,93 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/pico.css" />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <script src="src/main.ts" defer></script>
+    <title>Ethan Honzik</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="src/pico.css">
-  <link rel="stylesheet" type="text/css" href="src/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-  <script src="src/main.ts" defer></script>
-  <title>Ethan Honzik</title>
-</head>
-
-<body id="background">
-  <nav id="navbar" class="container-fluid nav blur">
-    <ul>
-      <li><strong><a href="index.html">Home</a></strong></li>
-    </ul>
-    <ul>
-      <li><a>Games</a></li>
-      <li><a>Projects</a></li>
-      <li><a href="https://github.com/Ethan-C-Honzik" style="background: rgba(0, 0, 0, 0); border: none;"><img
-            src="/github-mark-white.svg" style="height: 3rem;"></a></li>
-    </ul>
-  </nav>
-  <br><br>
-  <main class="container">
-    <div style="height: 90vh;">
-      <article class="verticalCenter" style="background-color: transparent;">
-        <div class="grid">
-          <div></div>
-          <div id="introCard">
-            <p style="margin-bottom: 0;">Hi I'm,</p>
-            <p style="margin: 0;"><span id="Name">Ethan Honzik </span>and I do:</p>
-            <div class="ScrollContainer">
-              <div class="scroll">
-                <div class="RightToLeft">
-                  <p>please enable javascript</p>
-                  <p>please enable javascript</p>
+  <body id="background">
+    <nav id="navbar" class="container-fluid nav blur">
+      <ul>
+        <li>
+          <strong><a href="index.html">Home</a></strong>
+        </li>
+      </ul>
+      <ul>
+        <li><a>Games</a></li>
+        <li><a>Projects</a></li>
+        <li>
+          <a
+            href="https://github.com/Ethan-C-Honzik"
+            style="background: rgba(0, 0, 0, 0); border: none"
+            ><img src="/github-mark-white.svg" style="height: 3rem"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <br /><br />
+    <main class="container">
+      <div style="height: 90vh">
+        <article class="verticalCenter" style="background-color: transparent">
+          <div class="grid">
+            <div></div>
+            <div id="introCard">
+              <p style="margin-bottom: 0">Hi I'm,</p>
+              <p style="margin: 0">
+                <span id="Name">Ethan Honzik </span>and I do:
+              </p>
+              <div class="ScrollContainer">
+                <div class="scroll">
+                  <div class="RightToLeft">
+                    <p>please enable javascript</p>
+                    <p>please enable javascript</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div></div>
           </div>
-          <div></div>
-        </div>
-      </article>
-      <svg class="arrows">
-        <path class="a1" d="M0 0 L30 32 L60 0"></path>
-        <path class="a2" d="M0 20 L30 52 L60 20"></path>
-        <path class="a3" d="M0 40 L30 72 L60 40"></path>
-      </svg>
-    </div>
-    <article class="blur">
-      <h1 class="center">Luma Graph</h1>
-      <div><video class="container" src="/public/LumaGraph.mp4" autoplay="true" loop="true" muted="muted"></video></div>
+        </article>
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+      </div>
+      <div class="background-div"></div>
       <br>
-      <p>
-        Luma Graph is a application designed for creating procedural 1D visuals that can be used to drive LED strips or
-        to generate reactive visuals in other applications. Real time data can be streamed over the network from custom
-        VSTs that can be loaded into DAWS. This allows for reactive and expresive visuals that can be tied to specific
-        elements of a track. Visuals can either be streamed real time over the network to LED controllers or they can be
-        recorded and exported to a file. These files can then be read by other applications.
-      </p>
-    </article>
-    <article class="blur">
-      <h1 class="center">PCB Design / Embedded Development</h1>
-      <p>
-
-      </p>
-      <model-viewer style="height: 30vh;" src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948" ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878" poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717" alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls="" auto-rotate="" ar="" ar-status="not-presenting">
-      </model-viewer>
-    </article>
-    <article class="blur">
-      <h1 class="center">Virtual Reality Graphics Research</h1>
-      <p>
-        CDEP
-      </p>
-    </article>
-    <article class="blur">
-      <h1 class="center">Game Development</h1>
-      <p>
-        CDEP
-      </p>
-    </article>
-  </main>
-  <script>
-
-  </script>
-</body>
-
+      <article class="blur">
+        <h1 class="center">Luma Graph</h1>
+        <div>
+          <video
+            class="container"
+            src="/public/LumaGraph.mp4"
+            autoplay="true"
+            loop="true"
+            muted="muted"
+          ></video>
+        </div>
+        <br />
+        <p>
+          Luma Graph is a application designed for creating procedural 1D
+          visuals that can be used to drive LED strips or to generate reactive
+          visuals in other applications. Real time data can be streamed over the
+          network from custom VSTs that can be loaded into DAWS. This allows for
+          reactive and expresive visuals that can be tied to specific elements
+          of a track. Visuals can either be streamed real time over the network
+          to LED controllers or they can be recorded and exported to a file.
+          These files can then be read by other applications.
+        </p>
+      </article>
+      <article class="blur">
+        <h1 class="center">PCB Design / Embedded Development</h1>
+        <p></p>
+        <model-viewer
+          style="height: 30vh"
+          src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
+          ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+          poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
+          alt="A 3D model of an astronaut"
+          shadow-intensity="1"
+          camera-controls=""
+          auto-rotate=""
+          ar=""
+          ar-status="not-presenting"
+        >
+        </model-viewer>
+      </article>
+      <article class="blur">
+        <h1 class="center">Virtual Reality Graphics Research</h1>
+        <p>CDEP</p>
+      </article>
+      <article class="blur">
+        <h1 class="center">Game Development</h1>
+        <p>CDEP</p>
+      </article>
+    </main>
+    <script></script>
+  </body>
 </html>
