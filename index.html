@@ -15,7 +15,7 @@
     <title>Ethan Honzik</title>
   </head>
 
-  <body id="background">
+  <body id="background" data-theme="dark">
     <nav id="navbar" class="container-fluid nav blur">
       <ul>
         <li>
@@ -64,9 +64,14 @@
         </svg>
       </div>
       <div class="background-div"></div>
-      <br>
-      <article class="blur">
-        <h1 class="center">Luma Graph</h1>
+      <br />
+      <h1 class="center">Some of My Work</h1>
+      <br />
+      <article>
+        <h2 class="center">Luma Graph</h2>
+        <h4 class="center">
+          A tool for building real time visuals built from scratch
+        </h4>
         <div>
           <video
             class="container"
@@ -78,39 +83,85 @@
         </div>
         <br />
         <p>
-          Luma Graph is a application designed for creating procedural 1D
-          visuals that can be used to drive LED strips or to generate reactive
-          visuals in other applications. Real time data can be streamed over the
-          network from custom VSTs that can be loaded into DAWS. This allows for
-          reactive and expresive visuals that can be tied to specific elements
-          of a track. Visuals can either be streamed real time over the network
-          to LED controllers or they can be recorded and exported to a file.
-          These files can then be read by other applications.
+          Luma Graph is a visual data flow "programming language" of sorts that
+          is used to create procedural real time visuals. I developed it from
+          scratch in unity. Initallly built for creating LED strip effects it
+          has since grown into a tool I use for creating general music visuals.
+          More info and the source are 
+          <a href="https://github.com/Ethan-C-Honzik/LumaGraph"
+            >available on my github</a
+          >.
         </p>
+        <div class="grid">
+          <div>
+            <h5 class="center">Features</h5>
+            <ul>
+              <li>Able to send and receive network data</li>
+              <li>
+                <a href="https://github.com/Ethan-C-Honzik/LumaGraphVST"
+                  >Custom VST to stream audio data from a DAW</a
+                >
+              </li>
+              <li>
+                A custom recording file format that can be converted to videos
+                via a
+                <a
+                  href="https://github.com/Ethan-C-Honzik/LumaGraphVideoUtility"
+                  >custom python FFMPEG tool</a
+                >
+              </li>
+              <li>Ability to group nodes into modules that can be imported into other projects</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <iframe
+                style="max-width: 100%; margin: 0 auto;"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MgWidtgZFhM?si=K4Cvaaj8SHul9dea&amp;start=35"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="center"><small>A video built in Blender utilizing Luma Graph</small></p>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
       </article>
-      <article class="blur">
-        <h1 class="center">PCB Design / Embedded Development</h1>
+      <article>
+        <h2 class="center">PCB Design / Embedded Development</h2>
         <p></p>
-        <model-viewer
-          style="height: 30vh"
-          src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
-          ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-          poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
-          alt="A 3D model of an astronaut"
-          shadow-intensity="1"
-          camera-controls=""
-          auto-rotate=""
-          ar=""
-          ar-status="not-presenting"
-        >
-        </model-viewer>
+        <div class="grid">
+          <div>
+            <model-viewer
+              style="width: 100%; min-height: 50vh"
+              src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
+              ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+              poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
+              alt="A 3D model of an astronaut"
+              shadow-intensity="1"
+              camera-controls=""
+              auto-rotate=""
+              ar=""
+              ar-status="not-presenting"
+            >
+            </model-viewer>
+          </div>
+          <div>Disc</div>
+        </div>
       </article>
-      <article class="blur">
-        <h1 class="center">Virtual Reality Graphics Research</h1>
+      <article>
+        <h2 class="center">Virtual Reality Graphics Research</h2>
         <p>CDEP</p>
       </article>
-      <article class="blur">
-        <h1 class="center">Game Development</h1>
+      <article>
+        <h2 class="center">Game Development</h2>
         <p>CDEP</p>
       </article>
     </main>
