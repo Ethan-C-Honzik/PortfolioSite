@@ -28,6 +28,7 @@ iframe {
 
 .nav{
   background-color: #24242400;
+  position: absolute;
 }
 
 .blur{
@@ -58,7 +59,7 @@ article{
 .background-div {
   position: absolute;
   background-color: hsl(220, 24%, 5%);
-  height: 80%;
+  height: 85%;
   width: 100vw;
   left: 50%;
   right: 50%;
