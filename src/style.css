@@ -27,7 +27,7 @@ iframe {
 }
 
 .nav{
-  background-color: #24242464;
+  background-color: #24242400;
 }
 
 .blur{
@@ -126,7 +126,7 @@ article{
   position: relative;
   left: 50%;
   margin-left: -30px;
-  bottom: -20vh;
+  bottom: -30vh;
 }
 
 .arrows path {
