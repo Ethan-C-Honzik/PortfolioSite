@@ -44,3 +44,5 @@ VANTA.NET({
 let canvas = <HTMLElement>document.querySelector(".vanta-canvas");
 canvas.style.position = "fixed";
 
+
+

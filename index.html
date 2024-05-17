@@ -11,7 +11,7 @@
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
     ></script>
-    <script src="src/main.ts" defer></script>
+    <script type="module" src="/src/main.ts" defer></script>
     <title>Ethan Honzik</title>
   </head>
 
@@ -19,12 +19,11 @@
     <nav id="navbar" class="container-fluid nav blur">
       <ul>
         <li>
-          <strong><a href="index.html">Home</a></strong>
+          <strong><a href="/">Home</a></strong>
         </li>
       </ul>
       <ul>
-        <li><a>Games</a></li>
-        <li><a>Projects</a></li>
+        <li><a href="/projects/">Projects</a></li>
         <li>
           <a
             href="https://github.com/Ethan-C-Honzik"
@@ -85,14 +84,32 @@
         <p>
           Luma Graph is a visual data flow "programming language" of sorts that
           is used to create procedural real time visuals. I developed it from
-          scratch in unity. Initallly built for creating LED strip effects it
+          scratch in unity. Initially built for creating LED strip effects, it
           has since grown into a tool I use for creating general music visuals.
-          More info and the source are 
+          More info and the source are
           <a href="https://github.com/Ethan-C-Honzik/LumaGraph"
             >available on my github</a
           >.
         </p>
         <div class="grid">
+          <div>
+            <div>
+              <iframe
+                style="max-width: 100%; margin: 0 auto"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MgWidtgZFhM?si=K4Cvaaj8SHul9dea&amp;start=35"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="center">
+                <small>A video built in Blender utilizing Luma Graph</small>
+              </p>
+            </div>
+          </div>
           <div>
             <h5 class="center">Features</h5>
             <ul>
@@ -110,27 +127,17 @@
                   >custom python FFMPEG tool</a
                 >
               </li>
-              <li>Ability to group nodes into modules that can be imported into other projects</li>
+              <li>
+                Ability to group nodes into modules that can be imported into
+                other projects
+              </li>
             </ul>
           </div>
           <div>
-            <div>
-              <iframe
-                style="max-width: 100%; margin: 0 auto;"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/MgWidtgZFhM?si=K4Cvaaj8SHul9dea&amp;start=35"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-              <p class="center"><small>A video built in Blender utilizing Luma Graph</small></p>
-            </div>
-          </div>
-          <div>
-
+            <img src="/Demo.jpg" style="max-width: 90%;" class="centerElement"/>
+            <p class="center">
+              <small>A real time web implementation of a Luma Graph recording <a>viewable here</a></small>
+            </p>
           </div>
         </div>
       </article>
