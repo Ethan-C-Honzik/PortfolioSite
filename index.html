@@ -25,7 +25,7 @@
   <br /><br />
   <main class="container">
     <div style="height: 90vh">
-      <article class="verticalCenter" style="background-color: transparent">
+      <div class="verticalCenter" style="background-color: transparent">
         <div class="grid">
           <div></div>
           <div id="introCard">
@@ -44,7 +44,7 @@
           </div>
           <div></div>
         </div>
-      </article>
+      </div>
       <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -60,7 +60,7 @@
         <h5 class="center">Software engineer</h5>
         <ul>
           <li>Spearheaded development of Jira bot written in python</li>
-          <li>wrote a chrome extension that integrated a Java abstract syntax tree parser into an internal browser based
+          <li>Wrote a chrome extension that integrated a Java abstract syntax tree parser into an internal browser based
             Java editor for live error detection</li>
           <li>Contributed to internal python based tooling</li>
         </ul>
@@ -76,7 +76,32 @@
         </ul>
       </article>
     </div>
+    <div class="grid">
+      <article>
+        <h2 class="center">Luminary Lighting</h2>
+        <h5 class="center">Lead Engineer and Embedded Software Developer</h5>
+        <ul>
+          <li>Designed and brought to market a user friendly wifi enabled addressable LED strips</li>
+          <li>Built on top of open source MIT licensed software to create firmware for the ESP8266</li>
+          <li>Utilized CAD to model the case of the product</li>
+        </ul>
+      </article>
+      <article>
+        <h2 class="center">Batteries Plus</h2>
+        <h5 class="center">Customer Service / Consumer Electronics Repair Technician</h5>
+        <ul>
+          <li>Performed mobile phone repairs</li>
+          <li>Helped customers with technical troubleshooting</li>
+          <li>Provided general customer service</li>
+        </ul>
+      </article>
+    </div>
     <br />
+    <h1 class="center">Education</h1>
+    <article>
+      <h2 class="center">University of St Thomas</h2>
+      <h5 class="center">Bachelors in Computer Science</h5>
+    </article>
     <h1 class="center">Some of My Work</h1>
     <article>
       <h2 class="center">Luma Graph</h2>
@@ -96,7 +121,7 @@
         <a href="https://github.com/Ethan-C-Honzik/LumaGraph">available on my github</a>.
       </p>
       <div class="grid">
-        <div>
+        <article>
           <div>
             <iframe style="max-width: 100%; margin: 0 auto" width="560" height="315"
               src="https://www.youtube.com/embed/MgWidtgZFhM?si=K4Cvaaj8SHul9dea&amp;start=35"
@@ -107,8 +132,8 @@
               <small>A video built in Blender utilizing Luma Graph</small>
             </p>
           </div>
-        </div>
-        <div>
+        </article>
+        <article>
           <h5 class="center">Features</h5>
           <ul>
             <li>Able to send and receive network data</li>
@@ -125,36 +150,55 @@
               other projects
             </li>
           </ul>
-        </div>
-        <div>
+        </article>
+        <article>
           <img src="assets/Demo.jpg" style="max-width: 90%;" class="centerElement" />
           <p class="center">
-            <small>A real time web implementation of a Luma Graph recording <a href="https://ethan-c-honzik.github.io/RandomWebProjects/Experiments/ShaderPhonkDemo/dist/index.html">viewable here</a></small>
+            <small>A real time web implementation of a Luma Graph recording <a
+                href="https://ethan-c-honzik.github.io/RandomWebProjects/Experiments/ShaderPhonkDemo/dist/index.html">viewable
+                here</a></small>
           </p>
-        </div>
+        </article>
       </div>
     </article>
     <article>
       <h2 class="center">PCB Design / Embedded Development</h2>
-      <p></p>
       <div class="grid">
-        <div>
-          <model-viewer src="./PCB.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+        <article>
+          <model-viewer src="./PCB.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+            tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
             <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
+              <div class="update-bar"></div>
             </div>
             <button slot="ar-button" id="ar-button">
-                View in your space
+              View in your space
             </button>
-        </model-viewer>        
+          </model-viewer>
+          <p class="center">
+            <small>A wifi enabled addressable LED controller board built for Luminary</small>
+          </p>
+        </article>
+        <div>
+          <h4 class="center">Some of My Embedded Projects</h4>
+          <ul>
+            <li><a href="https://github.com/Ethan-C-Honzik/ArduinoLedServer">A Java program</a> that does screen
+              recording and
+              sends the data over serial to an arduino running custom <a
+                href="https://github.com/Ethan-C-Honzik/LumaGraphVST">C++ firmware</a>
+            </li>
+            <li><a href="https://github.com/Ethan-C-Honzik/CapacitiveKeyboardFimware">C++ Firmware</a> that runs on a
+            </li>
+            <li><a href="https://github.com/Ethan-C-Honzik/ArduinoLedServer">C++ Firmware</a> that runs on an arduino
+              leonardo and sends keypresses mapped to a IR remote.
+            </li>
+          </ul>
         </div>
-        <div>Disc</div>
       </div>
     </article>
     <article>
       <h2 class="center">Virtual Reality Graphics Research</h2>
       <div class="grid">
-        <img src="assets/CDEP.jpg"/>
+        <img src="assets/CDEP.jpg" />
         <p>
           I implemented a novel CDEP algorithm in unity while working as an undergraduate computer graphics researcher
         </p>
@@ -162,10 +206,28 @@
     </article>
     <article>
       <h2 class="center">Game Development</h2>
-      <p>CDEP</p>
+      <div class="grid">
+        <iframe style="max-width: 100%; margin: 0 auto" width="560" height="315"
+          src="https://www.youtube.com/embed/nEaSqHd7XVQ?si=ocWTGycZAbVZfFRM&amp;start=7" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+          <p>I've been making games in some form since 2016. Though, haven't done much game development since high
+            school. Back in 2017 I started a Rhythm game shown in this youtube video. I abandoned it due to scope creep
+            and a general feeling that the game just wasn't very fun. It was essentially a music visualizer pretending
+            to be a game. After this I tended to just make music visualizers</p>
+        </div>
+        <img class="centerElement" src="assets/FlappyFidget.png" style="max-height: 100%;"/>
+      </div>
     </article>
+    <br><br>
+    <footer>
+      <br>
+      <p>Contact: HonzikEthan1@gmail.com</p>
+      <p>Copyright 2024 Ethan Honzik</p>
+    </footer>
   </main>
-  <script></script>
 </body>
 
 </html>

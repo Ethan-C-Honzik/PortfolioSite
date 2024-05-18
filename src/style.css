@@ -29,7 +29,7 @@ iframe {
 
 model-viewer {
   width: 100%;
-  min-height: 40vh
+  min-height: 25vh;
 }
 
 .nav {
@@ -59,6 +59,11 @@ model-viewer {
 
 article {
   background-color: hsl(220, 7%, 15%);
+  border: 1px solid gray;
+}
+
+footer {
+  border-top: 1px solid gray;
 }
 
 .background-div {
@@ -186,17 +191,14 @@ article {
 .arrows path.a1 {
   animation-delay: -1s;
   -webkit-animation-delay: -1s;
-  /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
-  /* Safari 和 Chrome */
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
-  /* Safari 和 Chrome */
 }
