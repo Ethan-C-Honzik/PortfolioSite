@@ -13,10 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
-  max-width: 100vw; 
+  max-width: 100vw;
   overflow-x: clip;
   overscroll-behavior: none;
 }
@@ -26,25 +27,29 @@ iframe {
   display: block;
 }
 
-.nav{
-  background-color: #24242400;
-  position: absolute;
+model-viewer {
+  width: 100%;
+  min-height: 40vh
 }
 
-.blur{
+.nav {
+  background-color: #24242400;
+}
+
+.blur {
   backdrop-filter: blur(6px);
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.centerElement{
+.centerElement {
   display: block;
   margin: 0 auto;
 }
 
-.verticalCenter{
+.verticalCenter {
   position: relative;
   top: 30%;
   left: 30%;
@@ -52,7 +57,7 @@ iframe {
   transform: translate(-30%, -30%);
 }
 
-article{
+article {
   background-color: hsl(220, 7%, 15%);
 }
 
@@ -69,7 +74,7 @@ article{
 }
 
 
-#introCard{
+#introCard {
   padding: 1em;
   margin-left: -5vw;
   margin-right: -5vw;
@@ -77,7 +82,7 @@ article{
   backdrop-filter: blur(6px);
 }
 
-#Name{
+#Name {
   font-weight: bold;
   color: hsl(15, 90%, 60%);
   font-size: 2em;
@@ -112,10 +117,11 @@ article{
   width: fit-content;
 }
 
-@keyframes  RightToLeft {
+@keyframes RightToLeft {
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(-50.4%);
   }
@@ -131,40 +137,66 @@ article{
 }
 
 .arrows path {
-	stroke: hsl(15, 90%, 60%);
-	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+  stroke: hsl(15, 90%, 60%);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
 }

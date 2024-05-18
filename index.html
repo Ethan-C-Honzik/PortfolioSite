@@ -139,13 +139,14 @@
       <p></p>
       <div class="grid">
         <div>
-          <model-viewer style="width: 100%; min-height: 50vh"
-            src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
-            ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-            poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
-            alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls="" auto-rotate="" ar=""
-            ar-status="not-presenting">
-          </model-viewer>
+          <model-viewer src="assets/PCB.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+        </model-viewer>        
         </div>
         <div>Disc</div>
       </div>
