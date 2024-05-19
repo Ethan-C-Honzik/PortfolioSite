@@ -22,11 +22,10 @@
       </li>
     </ul>
   </nav>
-  <br /><br />
   <main class="container">
     <div style="height: 90vh">
-      <div class="verticalCenter" style="background-color: transparent">
-        <div class="grid">
+      <div class="verticalCenter" style="background-color: transparent;">
+        <div class="grid" style="translate: 0 -10vh;">
           <div></div>
           <div id="introCard">
             <p style="margin-bottom: 0">Hi I'm,</p>
@@ -187,6 +186,8 @@
                 href="https://github.com/Ethan-C-Honzik/LumaGraphVST">C++ firmware</a>
             </li>
             <li><a href="https://github.com/Ethan-C-Honzik/CapacitiveKeyboardFimware">C++ Firmware</a> that runs on a
+              that runs on an arduino leonardo acting as a midi controller. A multiplexer is used to do capacitance
+              sensing on piano keys printed onto a PCB. Variation in pressure applied is used to do after touch.
             </li>
             <li><a href="https://github.com/Ethan-C-Honzik/ArduinoLedServer">C++ Firmware</a> that runs on an arduino
               leonardo and sends keypresses mapped to a IR remote.
@@ -200,20 +201,30 @@
       </div>
     </article>
     <article>
-      <h2 class="center">Virtual Reality Graphics Research</h2>
+      <h2 class="center">Virtual Reality Graphics Undergraduate Research</h2>
       <div class="grid">
         <img src="assets/CDEP.jpg" />
-        <p>
-          CDEP stands for collection of depth enhanced panoramas. It is algorithm for reconstructing 360 views from a
-          novel viewpoint when given a dataset of depth enhanced panoramas. Depth can either be included from a 
-        </p>
+        <div>
+          <p>
+            CDEP stands for collection of depth enhanced panoramas. It is algorithm for reconstructing 360 views from a
+            novel viewpoint when given a dataset of depth enhanced panoramas. Depth can either be included from a LIDAR
+            scanner or structure from motion algorithms can be used to estimate a point cloud that can be converted to
+            depths.
+          </p>
+          <p>
+            I created two implementations of this algorithm in unity written in C# and HLSL. Additionally I contributed
+            a
+            interpolation algorithm that utilizes compute shaders to create smoother transitions between captures.
+            The repo can be found <a href="https://github.com/ust-vis/CDEPVR">here</a>.
+          </p>
+        </div>
       </div>
     </article>
     <article>
       <h2 class="center">Game Development</h2>
       <div class="grid">
         <article>
-          <iframe style="max-width: 100%; margin: 0 auto" width="560" height="315"
+          <iframe class="verticalCenter" style="max-width: 100%; margin: 0 auto" width="560" height="315"
             src="https://www.youtube.com/embed/nEaSqHd7XVQ?si=ocWTGycZAbVZfFRM&amp;start=7" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -221,12 +232,18 @@
         </article>
         <article>
           <p>I've been making games in some form since 2016. Though, haven't done much game development since high
-            school. Back in 2017 I started a Rhythm game shown in this youtube video. I abandoned it due to scope creep
-            and a general feeling that the game just wasn't very fun. It was essentially a music visualizer pretending
-            to be a game. After this I tended to just make music visualizers</p>
+            school. Back in 2017 I started a Rhythm game shown in this youtube video. It is able to dynamically generate
+            levels in real time from user song files. I abandoned it due to scope creep and a general feeling that the
+            game just wasn't very fun. It was essentially a music visualizer pretending to be a game. After this I
+            tended to just make music visualizers.</p>
         </article>
         <article>
-          <img class="centerElement" src="assets/FlappyFidget.png" style="max-height: 100%;" />
+          <div class="verticalCenter">
+            <img class="centerElement " src="assets/FlappyFidget.png" style="max-height: 100%;" />
+            <p class="center">
+              <small>A flappy bird clone I built when I was 15</small>
+            </p>
+          </div>
         </article>
       </div>
     </article>
