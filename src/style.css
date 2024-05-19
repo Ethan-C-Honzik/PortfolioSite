@@ -23,6 +23,7 @@ body {
 }
 
 iframe {
+  max-width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -69,7 +70,7 @@ footer {
 .background-div {
   position: absolute;
   background-color: hsl(220, 24%, 5%);
-  height: 85%;
+  height: calc(100% - 90vh);
   width: 100vw;
   left: 50%;
   right: 50%;
