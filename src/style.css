@@ -30,7 +30,7 @@ iframe {
 
 model-viewer {
   width: 100%;
-  min-height: 25vh;
+  min-height: 90%;
 }
 
 .nav {
